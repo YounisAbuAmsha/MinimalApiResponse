@@ -4,7 +4,7 @@ using MinimalApiResponse.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
-
+// redirect https
 app.UseHttpsRedirection();
 
 app.MapGet("/", () => Results.Json("Blog"));
